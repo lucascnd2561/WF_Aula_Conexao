@@ -72,7 +72,7 @@
             this.txtEmail.Location = new System.Drawing.Point(15, 114);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(110, 20);
-            this.txtEmail.TabIndex = 3;
+            this.txtEmail.TabIndex = 2;
             // 
             // lblEmail
             // 
