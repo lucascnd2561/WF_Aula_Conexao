@@ -125,6 +125,11 @@ namespace WF_Aula
                 Conexao.Close();
             }
         }
+
+        private void lstContatos_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
     
 }

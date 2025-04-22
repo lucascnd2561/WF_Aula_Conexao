@@ -133,6 +133,7 @@
             this.lstContatos.Size = new System.Drawing.Size(619, 205);
             this.lstContatos.TabIndex = 11;
             this.lstContatos.UseCompatibleStateImageBehavior = false;
+            this.lstContatos.SelectedIndexChanged += new System.EventHandler(this.lstContatos_SelectedIndexChanged);
             // 
             // Form1
             // 
