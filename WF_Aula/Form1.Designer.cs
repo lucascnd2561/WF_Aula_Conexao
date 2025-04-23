@@ -39,6 +39,7 @@
             this.txtBuscar = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.lstContatos = new System.Windows.Forms.ListView();
+            this.btnNovo = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblNome
@@ -59,7 +60,7 @@
             // 
             // btnSalvar
             // 
-            this.btnSalvar.Location = new System.Drawing.Point(27, 254);
+            this.btnSalvar.Location = new System.Drawing.Point(27, 223);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(98, 42);
             this.btnSalvar.TabIndex = 2;
@@ -133,13 +134,24 @@
             this.lstContatos.Size = new System.Drawing.Size(619, 205);
             this.lstContatos.TabIndex = 11;
             this.lstContatos.UseCompatibleStateImageBehavior = false;
-            this.lstContatos.SelectedIndexChanged += new System.EventHandler(this.lstContatos_SelectedIndexChanged);
+            this.lstContatos.ItemSelectionChanged += new System.Windows.Forms.ListViewItemSelectionChangedEventHandler(this.lstContatos_ItemSelectionChanged);
+            // 
+            // btnNovo
+            // 
+            this.btnNovo.Location = new System.Drawing.Point(29, 271);
+            this.btnNovo.Name = "btnNovo";
+            this.btnNovo.Size = new System.Drawing.Size(98, 42);
+            this.btnNovo.TabIndex = 15;
+            this.btnNovo.Text = "Novo";
+            this.btnNovo.UseVisualStyleBackColor = true;
+            this.btnNovo.Click += new System.EventHandler(this.btnNovo_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(813, 334);
+            this.Controls.Add(this.btnNovo);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.txtBuscar);
             this.Controls.Add(this.label1);
@@ -172,6 +184,7 @@
         private System.Windows.Forms.TextBox txtBuscar;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ListView lstContatos;
+        private System.Windows.Forms.Button btnNovo;
     }
 }
 
